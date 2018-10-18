@@ -19,10 +19,10 @@
 import PropTypes from 'prop-types';
 
 export default props => (props.ellipsis ? `
-        overflow: 'hidden';
-        textOverflow: 'ellipsis';
-        whiteSpace: 'nowrap';
-        wordWrap: 'normal';
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
     ` : null);
 
 export const ellipsisPropTypes = {
