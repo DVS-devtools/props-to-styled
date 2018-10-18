@@ -1,18 +1,19 @@
 /**
  * @memberof PropsToStyled
  * @function ellipsis
- * @description Return the message + ' world'
- * @param {Object} props properties of styled components
- * @param {String} [options.message=''] message to show
- * @returns {String} Your message + ' world'
-
+ * @description Truncate string with "...", if it fills entire line
+ * @param {Object} props properties of the component
+ * @param {Boolean} [props.ellipsis=false] enable/disable ellipsis
+ * @returns {String} style to apply to styled component
  *
  * @example
- * // Initialize PropsToStyled
- *  var foo = PropsToStyled.init({
- *      message: 'hello'
- *  });
- *  console.log(foo);
+ * <CustomComponent ellipsis={true}>
+ *    This text will be truncated
+ * </CustomComponent>
+ *
+ * <CustomComponent ellipsis={false}>
+ *    This text will be not truncated
+ * </CustomComponent>
  */
 
 import PropTypes from 'prop-types';

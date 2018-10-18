@@ -1,3 +1,21 @@
+/**
+ * @memberof PropsToStyled
+ * @function swipe
+ * @description Make a component swipeable
+ * @param {Object} props properties of the component
+ * @param {Boolean} [props.swipe=false] make component swipeable or not
+ * @returns {String} style to apply to styled component
+ *
+ * @example
+ * <CustomComponent swipe={true}>
+ *    This element will be swipeable
+ * </CustomComponent>
+ *
+ * <CustomComponent swipe={false}>
+ *    This element will be not swipeable
+ * </CustomComponent>
+ */
+
 import PropTypes from 'prop-types';
 
 export default (props) => {
