@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="PropsToStyled.html">PropsToStyled</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PropsToStyled.html#.ellipsis">ellipsis</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PropsToStyled.html#.fixed">fixed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PropsToStyled.html#.float">float</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PropsToStyled.html#.linearGradient">linearGradient</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PropsToStyled.html#.shape">shape</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PropsToStyled.html#.swipe">swipe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PropsToStyled.html#.uppercase">uppercase</a></span></li>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>props-to-styled</h1><p><a href="https://travis-ci.com/docomodigital/props-to-styled"><img src="https://travis-ci.com/docomodigital/props-to-styled.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/github/docomodigital/props-to-styled?branch=master"><img src="https://coveralls.io/repos/github/docomodigital/props-to-styled/badge.svg?branch=master" alt="Coverage Status"></a>
+<a href="https://badge.fury.io/js/%40docomodigital%2Fprops-to-styled"><img src="https://badge.fury.io/js/%40docomodigital%2Fprops-to-styled.svg" alt="npm version"></a>
+<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/docomodigital/props-to-styled.svg" alt="Greenkeeper badge"></a></p>
+<p>Transform custom props of your styled components to styles. </p>
+<h2>Usage</h2><p>Using this:</p>
+<pre class="prettyprint source lang-html"><code>&lt;CustomComponent fixed=&quot;top&quot;>
+    Fixed to top of the page
+&lt;/CustomComponent>
+
+&lt;CustomComponent fixed=&quot;bottom&quot;>
+    Fixed to bottom of the page
+&lt;/CustomComponent></code></pre><pre class="prettyprint source lang-javascript"><code>import styled from 'styled-components';
+import { fixed } from 'props-to-styled';
+
+const CustomComponent = styled.div`
+    ${fixed};
+`</code></pre><p>the result is similar to:</p>
+<pre class="prettyprint source lang-html"><code>&lt;div style=&quot;position: fixed; top: 0; bottom: inherit; left: 0; right: 0;&quot;>
+    Fixed to top of the page
+&lt;/div>
+
+&lt;div style=&quot;position: fixed; top: inherit; bottom: 0; left: 0; right: 0;&quot;>
+    Fixed to bottom of the page
+&lt;/div></code></pre><p>you can use also propTypes:</p>
+<pre class="prettyprint source lang-javascript"><code>import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { fixed, fixedPropTypes } from 'props-to-styled';
+
+const CustomComponent = styled.div`
+    ${fixed};
+`
+
+CustomComponent.propTypes = {
+    ...fixedPropTypes
+}</code></pre><h2>Available props</h2><h3>ellipsis</h3><p><em>Truncate string with &quot;...&quot;, if it fills entire line</em></p>
+<p><strong>Type:</strong> boolean</p>
+<p><strong>Values:</strong> true || false</p>
+<p><strong>Default:</strong> false</p>
+<hr>
+<h3>fixed</h3><p><em>Fix to top/bottom of the page when user scrolls</em></p>
+<p><strong>Type:</strong> string</p>
+<p><strong>Values:</strong> 'top' || 'bottom' || 'none'</p>
+<p><strong>Default:</strong> 'none'</p>
+<hr>
+<h3>float</h3><p><em>Float an element to left or right</em></p>
+<p><strong>Type:</strong> string</p>
+<p><strong>Values:</strong> 'left' || 'right' || 'none'</p>
+<p><strong>Default:</strong> 'none'</p>
+<hr>
+<h3>linearGradient</h3><p><em>Add linear gradient as background of a component (only two values, top-to-down)</em></p>
+<p><strong>Type:</strong> array (first value of the array is top color, second value is bottom color)</p>
+<p><strong>Values:</strong> (rgba or hex)</p>
+<p><strong>Default:</strong> []</p>
+<p><strong>Example:</strong></p>
+<pre class="prettyprint source lang-html"><code>&lt;CustomComponent linearGradient={['#FFFFFF', '#000000']} /></code></pre><hr>
+<h3>shape</h3><p><em>Change shape of the component</em></p>
+<p><strong>Type:</strong> string</p>
+<p><strong>Values:</strong> 'circle' || 'square' || 'none'</p>
+<p><strong>Default:</strong> 'none'</p>
+<hr>
+<h3>swipe</h3><p><em>Make a component swipeable</em></p>
+<p><strong>Type:</strong> boolean</p>
+<p><strong>Values:</strong> true || false</p>
+<p><strong>Default:</strong> false</p>
+<hr>
+<h3>uppercase</h3><p><em>Apply uppercase to a string</em></p>
+<p><strong>Type:</strong> boolean</p>
+<p><strong>Values:</strong> true || false</p>
+<p><strong>Default:</strong> false</p>
+<h2>Installation</h2><h3>NPM</h3><pre class="prettyprint source lang-bash"><code>npm install --save props-to-styled</code></pre><h2>Documentation</h2><p>To read documentation, go to:</p>
+<p><a href="http://docomodigital.github.io/props-to-styled/latest">http://docomodigital.github.io/props-to-styled/latest</a></p>
+<p>or run the following command inside the props-to-styled folder: </p>
+<pre class="prettyprint source lang-bash"><code>npm run doc:open</code></pre></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Oct 18 2018 16:06:58 GMT+0200 (CEST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
