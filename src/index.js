@@ -2,53 +2,38 @@
  * @class PropsToStyled
  * @description Description of your library
  */
-import ellipsis, { ellipsisPropTypes } from './ellipsis/ellipsis';
-import fixed, { fixedPropTypes } from './fixed/fixed';
-import float, { floatPropTypes } from './float/float';
-import linearGradient, { linearGradientPropTypes } from './linearGradient/linearGradient';
-import shape, { shapePropTypes } from './shape/shape';
-import swipe, { swipePropTypes } from './swipe/swipe';
-import uppercase, { uppercasePropTypes } from './uppercase/uppercase';
 
-export default {
-    /**
-     * @see modules/ellipsis
-     */
-    ellipsis,
-    ellipsisPropTypes,
+/**
+ * @see modules/ellipsis
+ */
+export { default as ellipsis, ellipsisPropTypes } from './ellipsis/ellipsis';
 
-    /**
-     * @see modules/fixed
-     */
-    fixed,
-    fixedPropTypes,
-    /**
-     * @see modules/float
-     */
-    float,
-    floatPropTypes,
+/**
+ * @see modules/fixed
+ */
+export { default as fixed, fixedPropTypes } from './fixed/fixed';
 
-    /**
-     * @see modules/linearGradient
-     */
-    linearGradient,
-    linearGradientPropTypes,
+/**
+ * @see modules/float
+ */
+export { default as float, floatPropTypes } from './float/float';
 
-    /**
-     * @see modules/shape
-     */
-    shape,
-    shapePropTypes,
+/**
+ * @see modules/linearGradient
+ */
+export { default as linearGradient, linearGradientPropTypes } from './linearGradient/linearGradient';
 
-    /**
-     * @see modules/swipe
-     */
-    swipe,
-    swipePropTypes,
+/**
+ * @see modules/shape
+ */
+export { default as shape, shapePropTypes } from './shape/shape';
 
-    /**
-     * @see modules/uppercase
-     */
-    uppercase,
-    uppercasePropTypes
-};
+/**
+ * @see modules/swipe
+ */
+export { default as swipe, swipePropTypes } from './swipe/swipe';
+
+/**
+ * @see modules/uppercase
+ */
+export { default as uppercase, uppercasePropTypes } from './uppercase/uppercase';
