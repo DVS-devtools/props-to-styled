@@ -42,6 +42,22 @@ the result is similar to:
 </div>
 ```
 
+you can use also propTypes:
+
+```javascript
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { fixed, fixedPropTypes } from 'props-to-styled';
+
+const CustomComponent = styled.div`
+    ${fixed};
+`
+
+CustomComponent.propTypes = {
+    ...fixedPropTypes
+}
+```
+
 ## Available props
 
 ### ellipsis
