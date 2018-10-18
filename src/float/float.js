@@ -33,6 +33,6 @@ export default (props) => {
     }
 };
 
-export const floatPropTypes = { 
-    float: PropTypes.oneOf(['left', 'right', 'none']) 
+export const floatPropTypes = {
+    float: PropTypes.oneOf(['left', 'right', 'none'])
 };
