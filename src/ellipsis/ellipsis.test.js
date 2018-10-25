@@ -3,10 +3,10 @@ import ellipsis from './ellipsis';
 test('ellipsis works correctly with true', () => {
     const result = ellipsis({ ellipsis: true });
     expect(result).toBe(`
-        overflow: 'hidden';
-        textOverflow: 'ellipsis';
-        whiteSpace: 'nowrap';
-        wordWrap: 'normal';
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
     `);
 });
 

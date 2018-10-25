@@ -1,3 +1,22 @@
+/**
+ * @memberof PropsToStyled
+ * @function linearGradient
+ * @description Add linear gradient as background of a component (only two values, top-to-down)
+ * @param {Object} props properties of the component
+ * @param {Array} [props.linearGradient=[]] two colors for gradient
+ * (first is top color, second is bottom color)
+ * @returns {String} style to apply to styled component
+ *
+ * @example
+ * <CustomComponent linearGradient={['#000000', '#FFFFFF']}>
+ *    This element will have linearGradient from #000000 (top) to #FFFFFF (bottom)
+ * </CustomComponent>
+ *
+ * <CustomComponent linearGradient={[]}>
+ *    This element will have not linearGradient
+ * </CustomComponent>
+ */
+
 import PropTypes from 'prop-types';
 import isArray from 'isarray';
 
