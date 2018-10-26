@@ -1,3 +1,7 @@
+## 1.1.0
+
+* Filter attribute
+
 ## 1.0.1
 
 * Fix: added build files

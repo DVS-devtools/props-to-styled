@@ -9,6 +9,11 @@
 export { default as ellipsis, ellipsisPropTypes } from './ellipsis/ellipsis';
 
 /**
+ * @see modules/filter
+ */
+export { default as filter, filterPropTypes } from './filter/filter';
+
+/**
  * @see modules/fixed
  */
 export { default as fixed, fixedPropTypes } from './fixed/fixed';
