@@ -3,7 +3,7 @@
  * @function filter
  * @description Filter CSS attribute (https://www.w3schools.com/cssref/css3_pr_filter.asp)
  * @param {Object} props properties of the component
- * @param {String} [props.filter='none'] value of filter attribute
+ * @param {String} [props.filter=''] value of filter attribute
  * @returns {String} style to apply to styled component
  *
  * @example

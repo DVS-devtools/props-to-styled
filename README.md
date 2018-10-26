@@ -71,6 +71,17 @@ CustomComponent.propTypes = {
 
 ---
 
+### filter
+*Filter CSS attribute <br/> (https://www.w3schools.com/cssref/css3_pr_filter.asp)*
+
+**Type:** string
+
+**Values:** (value of CSS filter)
+
+**Default:** ''
+
+---
+
 ### fixed
 *Fix to top/bottom of the page when user scrolls*
 
