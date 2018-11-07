@@ -1,3 +1,7 @@
+## 1.2.0
+
+* Ellipsis can take the number of rows, in addiction to true (1 row)
+
 ## 1.1.0
 
 * Filter attribute

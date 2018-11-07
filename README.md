@@ -61,11 +61,11 @@ CustomComponent.propTypes = {
 ## Available props
 
 ### ellipsis
-*Truncate string with "...", if it fills entire line*
+*Truncate string with "..." for one or many rows*
 
-**Type:** boolean
+**Type:** boolean || number
 
-**Values:** true || false
+**Values:** true (1 row) || (number of rows) || false
 
 **Default:** false
 
