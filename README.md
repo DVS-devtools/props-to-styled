@@ -2,10 +2,17 @@
 
 [![Build Status](https://travis-ci.com/docomodigital/props-to-styled.svg?branch=master)](https://travis-ci.com/docomodigital/props-to-styled)
 [![Coverage Status](https://coveralls.io/repos/github/docomodigital/props-to-styled/badge.svg?branch=master)](https://coveralls.io/github/docomodigital/props-to-styled?branch=master)
-[![npm version](https://badge.fury.io/js/%40docomodigital%2Fprops-to-styled.svg)](https://badge.fury.io/js/%40docomodigital%2Fprops-to-styled)
+[![npm version](https://badge.fury.io/js/props-to-styled.svg)](https://badge.fury.io/js/props-to-styled)
 [![Greenkeeper badge](https://badges.greenkeeper.io/docomodigital/props-to-styled.svg)](https://greenkeeper.io/)
 
 Transform custom props of your styled components to styles. 
+
+## Installation
+
+### NPM
+```bash
+npm install --save props-to-styled
+```
 
 ## Usage
 
@@ -150,13 +157,6 @@ CustomComponent.propTypes = {
 **Values:** true || false
 
 **Default:** false
-
-## Installation
-
-### NPM
-```bash
-npm install --save props-to-styled
-```
 
 ## Documentation
 
