@@ -4,6 +4,27 @@
   "description": "Transform custom props of your styled components to styles",
   "main": "dist/index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docomodigital/props-to-styled.git"
+  },
+  "keywords": [
+    "styled-components",
+    "styled-system",
+    "javascript",
+    "vanilla-javascript",
+    "vanilla-js"
+  ],
+  "contributors": [
+    {
+      "name": "Aurelio Merenda",
+      "email": "aurelio.merenda@docomogital.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/docomodigital/props-to-styled/issues"
+  },
+  "homepage": "https://github.com/docomodigital/props-to-styled#readme",
   "scripts": {
     "build": "rimraf ./dist && cross-env NODE_ENV=production webpack",
     "doc": "rimraf ./docs/${npm_package_version} && jsdoc -c .jsdoc.json -d ./docs/${npm_package_version}/",
