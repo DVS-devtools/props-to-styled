@@ -35,7 +35,25 @@ const App = () => {
             <br/>
 
             <CustomComponent ellipsis={true}>
-                ELLIPSIS : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                ELLIPSIS (1 ROW) : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
+                a nulla viverra rhoncus vel ut sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
+                a nulla viverra rhoncus vel ut sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
+                a nulla viverra rhoncus vel ut sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
+                a nulla viverra rhoncus vel ut sapien.
+            </CustomComponent>
+
+            <CustomComponent ellipsis={2}>
+                ELLIPSIS (2 ROWS) : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
+                a nulla viverra rhoncus vel ut sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
+                a nulla viverra rhoncus vel ut sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
+                a nulla viverra rhoncus vel ut sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
                 felis id tortor porta, nec facilisis nunc vehicula. Vivamus ac ante 
                 a nulla viverra rhoncus vel ut sapien.
             </CustomComponent>
@@ -62,7 +80,7 @@ const App = () => {
                 uppercase
             </CustomComponent>
 
-            <CustomComponent linearGradient={['#F00', '#0F0']} style={{ height: '500px' }}>
+            <CustomComponent linearGradient={['#F00', '#0F0']} style={{ height: '200px' }}>
                 LINEAR GRADIENT
             </CustomComponent>
 
