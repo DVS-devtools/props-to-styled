@@ -71,7 +71,7 @@
     "jest": "^23.6.0",
     "jsdoc": "^3.5.5",
     "minami": "^1.2.3",
-    "mini-css-extract-plugin": "^0.7.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -80,7 +80,7 @@
     "style-loader": "^0.23.1",
     "styled-components": "^4.3.1",
     "url-loader": "^2.0.1",
-    "webpack": "^4.21.0",
+    "webpack": "^4.38.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
     "webpack-merge": "^4.1.4"
