@@ -5,3 +5,5 @@ npm-debug.log
 .cache/
 example/dist/
 coverage/
+umd/
+dist/
