@@ -9,6 +9,7 @@
 		"one-var-declaration-per-line": "off",
 		"eol-last": "off",
 		"no-param-reassign": "off",
-		"class-methods-use-this": "off"
+		"class-methods-use-this": "off",
+        "arrow-parens": "off"
     }
 }
