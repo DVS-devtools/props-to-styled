@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
     module: {
@@ -30,6 +31,7 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /(node_modules)/,
+                options: require(path.join(process.cwd(), 'babel.config.js'))
             },
         ],
     },
