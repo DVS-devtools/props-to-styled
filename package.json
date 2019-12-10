@@ -1,6 +1,6 @@
 {
   "name": "props-to-styled",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Transform custom props of your styled components to styles",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
