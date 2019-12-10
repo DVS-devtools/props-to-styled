@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "8"
+  - "10"
 
 branches:
  only:
@@ -9,10 +9,10 @@ branches:
    - /^greenkeeper/.*$/
 
 install:
-  - npm install
+  - yarn install
 
 script:
-  - npm run doc
-  - npm run lint
-  - npm run build
-  - npm run test:coveralls
+  - yarn doc
+  - yarn lint
+  - yarn build
+  - yarn test:coveralls

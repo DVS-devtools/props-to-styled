@@ -5,5 +5,6 @@
         "!src/index.js",
         "!src/global.js"
     ],
+    "testPathIgnorePatterns": ["/node_modules/", "/dist/", "/umd/"],
     "coverageReporters": ["lcov", "text", "text-summary"]
 }
