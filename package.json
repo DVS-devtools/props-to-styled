@@ -95,7 +95,7 @@
     "rollup-plugin-terser": "^5.1.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "styled-components": "^4.3.1",
+    "styled-components": "^5.0.1",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.1.2",
